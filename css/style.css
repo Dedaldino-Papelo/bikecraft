@@ -31,7 +31,7 @@ p{
     text-transform: uppercase;
     line-height: 20px;
     letter-spacing: .1em;
-    transition: all 0.3s;
+    transition: all 0.3s ease;
 }
 .btn:hover{
     border: 3px solid #fff;
@@ -327,7 +327,7 @@ p{
    border: 3px solid #fec63e;
    display: block;
    padding: 6px ;
-   transition: all 0.3s;
+   transition: all 0.3s ease;
 }
 .footer_media ul li a:hover{
    border: 3px solid #fff;
@@ -338,6 +338,50 @@ p{
     padding: 8px 0;
     width: 100%;
 }
+
+.introducao h1, .introducao blockquote, .introducao .btn, .animar, .animar-interno, 
+.introducao-interna h1, .introducao-interna p{
+    opacity: 0;
+}
+
+/*Animate Css*/
+.animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+  }
+  
+  @-webkit-keyframes fadeInDown {
+    0% {
+      opacity: 0;
+      -webkit-transform: translate3d(0, -20px, 0);
+      transform: translate3d(0, -20px, 0);
+    }
+    100% {
+      opacity: 1;
+      -webkit-transform: none;
+      transform: none;
+    }
+  }
+  
+  @keyframes fadeInDown {
+    0% {
+      opacity: 0;
+      -webkit-transform: translate3d(0, -20px, 0);
+      transform: translate3d(0, -20px, 0);
+    }
+    100% {
+      opacity: 1;
+      -webkit-transform: none;
+      transform: none;
+    }
+  }
+  
+  .fadeInDown {
+    -webkit-animation-name: fadeInDown;
+    animation-name: fadeInDown;
+  }
 
 
 
