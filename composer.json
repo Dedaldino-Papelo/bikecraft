@@ -1,3 +1,15 @@
 {
-    "Deploy":"Deploy"
+    "name": "administrador/bikecraft",
+    "autoload": {
+        "psr-4": {
+            "Administrador\\Bikecraft\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Dedalino",
+            "email": "kelsonpapelo18@gmail.com"
+        }
+    ],
+    "require": {}
 }
